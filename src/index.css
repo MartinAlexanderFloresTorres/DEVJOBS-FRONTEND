@@ -22,7 +22,6 @@ body {
   min-width: 340px;
   margin: 0;
   padding-bottom: 20px;
-  word-break: break-all !important;
 }
 main {
   padding: 0 30px;
@@ -920,6 +919,9 @@ p.candidatos {
   .lista-vacantes .caja .btn {
     width: 100%;
   }
+}
+.lista-candidatos h2 {
+  margin-bottom: 30px;
 }
 .lista-candidatos p,
 .lista-vacantes p {
