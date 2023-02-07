@@ -22,6 +22,7 @@ body {
   min-width: 340px;
   margin: 0;
   padding-bottom: 20px;
+  word-break: break-all !important;
 }
 main {
   padding: 0 30px;
@@ -533,6 +534,11 @@ button:hover:disabled {
 .contrato {
   text-transform: capitalize;
 }
+.puesto,
+.etiqueta,
+.nombre {
+  word-break: break-all !important;
+}
 .caja .puesto,
 .caja .etiqueta {
   font-weight: 700;
@@ -542,8 +548,12 @@ button:hover:disabled {
   text-align: left;
 }
 .caja .vacante-titulo {
-  position: relative;
   width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 10px;
+  row-gap: 10px;
+  word-break: break-all !important;
 }
 .contenido-superior .caja {
   margin-bottom: 20px;
@@ -553,10 +563,8 @@ button:hover:disabled {
 }
 .caja .vacante-titulo svg,
 .caja .vacante-titulo img {
-  position: absolute;
-  top: 0;
   width: 30px;
-  right: -35px;
+  min-width: 30px;
 }
 .caja .nombre {
   font-size: 2.4rem;
@@ -922,6 +930,8 @@ p.candidatos {
 /** Alertas **/
 .swal2-popup {
   width: 60rem !important;
+  background: #19191a !important;
+  color: #fff !important;
 }
 .swal2-popup .swal2-title {
   font-size: 26px !important;
